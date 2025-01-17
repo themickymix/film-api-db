@@ -20,8 +20,8 @@ const MovieTopRated = () => {
   const { data } = useGetApi<MovieTopRated>(topRatedUrl);
 
   return (
-    <div className="grid grid-cols-3 md:grid-cols-9 gap-2">
-      {data?.results.slice(0, 9).map((film) => (
+    <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-10 gap-2 ">
+      {data?.results.slice(0, 10).map((film) => (
         <div key={film.id}>
           <Card2
             key={film.id}
