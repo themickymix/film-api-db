@@ -14,18 +14,16 @@ export function DialogDemo() {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const closeDialog = () => setIsDialogOpen(false);
-/*   const openDialog = () => setIsDialogOpen(true); */
+  /*   const openDialog = () => setIsDialogOpen(true); */
 
   return (
     <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
       {/* Trigger button */}
       <DialogTrigger asChild>
-        <Button className="border-[1px] w-48 rounded-lg " >
-          Search...
-        </Button> 
+        <Button className="border-[1px] w-48 rounded-lg ">Search...</Button>
       </DialogTrigger>
 
-      <DialogTitle></DialogTitle>
+      <DialogTitle> &nbsp;</DialogTitle>
 
       {/* Modal content */}
       <DialogContent className="p-0 overflow-hidden">
